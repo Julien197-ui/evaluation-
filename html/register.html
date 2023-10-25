@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enregistrer</title>
+    <link rel="stylesheet" href="../css/resetCss.css">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+    <h1>S'enregistrer</h1>
+    <div class="cont">
+        <form id="signup" class="form">
+            <div class="form-field error success" id="nameForm">
+                <label for="username">Nom : </label><br>
+                <input type="text" id="username" class="input" autocomplete="off">
+                <small></small>
+            </div>
+            <div class="form-field error success">
+                <label for="surName">Prénom : </label><br>
+                <input type="text" id="surName" class="input" autocomplete="off">
+                <small></small>
+            </div>
+            <div class="form-field error success">
+                <label for="email"> Mail : </label><br>
+                <input type="text" id="email" class="input" autocomplete="off">
+                <small></small>
+            </div>
+            <div class="form-field error success">
+                <label for="password">Mot de passe : </label><br>
+                <input type="password" id="password" class="input" autocomplete="off">
+                <small></small>
+            </div>
+            <div class="form-field error success">
+                <label for="confirm-password">Confirmation du mot de passe : </label><br>
+                <input type="password" id="confirm-password" class="input" autocomplete="off">
+                <small></small>
+            </div>
+            <div class="form-field">
+                <input type="submit" value="S'enregistrer" class="envoyer">
+            </div>
+        </form>
+    </div>
+    <script src="../js/register.js"></script>
+</body>
+</html>
