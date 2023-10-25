@@ -35,20 +35,8 @@ const checkTitle = () => {
     }
     return valid;
 }
- function ajout(titreEl) {
-    
 
-    var table = document.getElementById("table");
-    let row = table.insertRow();
-    let cell1 = row.insertCell();
-    cell1.appendChild(document.createTextNode(titreEl.value));
-    let cell2 = row.insertCell();
-    cell2.appendChild(document.createTextNode("qsdqdqd"));
-    //cell2.appendChild(title.value);
-    let cell3 = row.insertCell();
-    cell3.appendChild(document.createTextNode("qsdqdqd"));
-};
-form.addEventListener('submit',function(e){ 
+test.addEventListener('click',function(e){ 
     let isTitleValid = checkTitle();
 // Soumettre le formulaire 
     if (isTitleValid == false) {
@@ -57,7 +45,16 @@ form.addEventListener('submit',function(e){
     } else {
         //alert("Le sujet a été créé");
         localStorage.setItem("title",titreEl.value);
-        ajout(titreEl);
+        var identifiant = localStorage.getItem("username");
+        var prenom = localStorage.getItem("prénom");
+        var table = document.getElementById("table");
+    let row = table.insertRow();
+    let cell1 = row.insertCell();
+    cell1.appendChild(document.createTextNode(titreEl.value));
+    let cell2 = row.insertCell();
+    cell2.appendChild(document.createTextNode(new Date().toLocaleDateString()));
+    let cell3 = row.insertCell();
+    cell3.appendChild(document.createTextNode(prenom+ " "+identifiant));
 
 }
     });
