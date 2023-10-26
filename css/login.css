@@ -1,0 +1,54 @@
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+h1{
+    text-align: center;
+    margin: auto 0;
+    font-family: inter;
+    font-weight: bold;
+    font-size: 36px;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    margin: 200px auto;
+    width: fit-content;
+}
+.form{
+    text-align: center;
+    font-size: 20px;
+    font-family: inter;
+    border: solid;
+    border-radius: 10px;
+    padding: 15px;
+    border-color: black;
+    width: fit-content;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+    width: fit-content;
+}
+.envoyer{
+    font-family: inter;
+    font-size: 20px;
+    margin: 20px auto;
+}
+.form-field.error input {
+    border-style: solid;
+    border-color: var(--error-color);
+   }
+.form-field.success input {
+    border-style: solid;
+    border-color: var(--success-color);
+}
+.form-field small {
+    border-style: solid;
+    color: var(--error-color);
+}
+.mt20{
+    margin-top: 20px;
+}

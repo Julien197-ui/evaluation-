@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sujet</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="../css/resetCss.css">
+    <link rel="stylesheet" href="../css/sujet.css">
+</head>
+<body>
+    <h1 id="titre"></h1>
+    <table id="commentaires">
+        <thead>
+            <tr>
+                <td id="texte">Lorem ipsum dolor</td>
+                <td class="right"><span id="prenom"></span> <span id="nom"></span><br> envoyer le :<span id="date"></span> à <span id="heure"></span></td>
+            </tr>
+        </thead>
+        <tbody id="table">
+        </tbody>
+        <!--
+        <div class="newComment">
+            <p id="texte">Lorem ipsum dolor</p>
+            <ul>
+                <p class="right"><span id="prenom"></span> <span id="nom"></span></p>
+                <p class="right">envoyer le :<span id="date"></span> à <span id="heure"></span></p>
+            </ul>    
+        </div>
+        <div class="newComment">
+            <p id="texte">Lorem ipsum dolor</p>
+            <ul>
+                <p class="right"><span id="prenom"></span> <span id="nom"></span></p>
+                <p class="right">envoyer le :<span id="date"></span> à <span id="heure"></span></p>
+            </ul>    
+        </div>-->
+    </table>
+    <div class="message">
+        <p>Message à envoyer</p>
+        <input type="text" id="commentaire">
+        <input type="button" id="envoyer" value="envoyer">
+        <small></small>
+    </div>
+    <script src="../js/sujet.js"></script>
+</body>
+</html>

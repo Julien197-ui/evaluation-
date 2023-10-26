@@ -1,0 +1,51 @@
+body{
+    font-family: inter;
+    color: black;
+    border-color: black;
+}
+h1{
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+    font-size: 36px;
+}
+#commentaires{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 100px auto;
+    width: fit-content;
+    border: solid;
+    border-radius: 5px;
+    
+}
+.message{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.newComment{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: right;
+
+}
+ul{
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    flex-direction: column;
+    border-width: 5px;
+    margin-left: 20px;
+}
+#texte{
+    text-align: left;
+    padding-right: 5px;
+}
+.right{
+    text-align: right;
+    border-left: solid;
+    padding-left: 5px;
+}

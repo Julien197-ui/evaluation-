@@ -54,7 +54,7 @@ let form = document.getElementById("signup")
                 const min = 3;
                 const username = usernameEl.value.trim();
                 if (!isRequired(username)) {
-                    showError(usernameEl, 'Le champ ne peut être vide');
+                    showError(usernameEl, 'Le champ ne peut pas être vide');
                 } else if (!isMinimum(username.length, min)) {
                     showError(usernameEl, `le nom doit avoir au moins ${min} caractères.`)
                 } else if (isNameValid(username)) {
@@ -72,7 +72,7 @@ let form = document.getElementById("signup")
             const surname = surNameEl.value.trim();
         
             if (!isRequired(surname)) {
-                showError(surNameEl, 'Le champ ne peut être vide');
+                showError(surNameEl, 'Le champ ne peut pas être vide');
             } else if (!isMinimum(surname.length, min)) {
                 showError(surNameEl, `le prénom doit avoir au moins ${min} caractères.`)
             }
@@ -88,10 +88,9 @@ let form = document.getElementById("signup")
             let valid = false;
             const email = emailEl.value.trim();
             if (!isRequired(email)) {
-                showError(emailEl, 'le champ ne peut être vide');
+                showError(emailEl, 'le champ ne peut pas être vide');
             } else if (!isEmailValid(email)) {
-                showError(emailEl, "L'adresse mail ne peut être valide")
-            } else {
+                showError(emailEl, "L'adresse mail n'est pas valide")            } else {
                 showSuccess(emailEl);
                 valid = true;
             }
@@ -101,7 +100,7 @@ let form = document.getElementById("signup")
             let valid = false;
             const password = passwordEl.value.trim();
             if (!isRequired(password)) {
-                showError(passwordEl, 'le mot de passe ne peut être vide');
+                showError(passwordEl, 'le mot de passe ne peut pas être vide');
             } else if (!isPasswordSecure(password)) {
                 showError(passwordEl, 'Le mot de passe doit avoir au moins 8 caractères, il doit comporter une minuscule,une majuscule, un chiffre et un caractère spécial parmi les suivants (#+-^[])');
             } else {
@@ -136,9 +135,8 @@ let form = document.getElementById("signup")
     // Soumettre le formulaire 
         if (isFormValid == false) {
             e.preventDefault();
-            alert("L'envoie a échoué")
+            alert("Veuillez remplir les informations manquantes ou erronées")
         } else {
-            alert("Bravo l'envoie du formulaire a été effectué");
             localStorage.setItem("prénom",surNameEl.value);
             localStorage.setItem("identifiant",emailEl.value);
             localStorage.setItem("mdp",passwordEl.value);

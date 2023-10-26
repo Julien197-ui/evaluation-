@@ -1,0 +1,41 @@
+header{
+    background-color: rgb(15, 15, 15);
+    opacity: 0.8;
+    margin:  auto;
+    color: white;
+    z-index: 1;
+}
+h1{
+    text-align: center;
+    margin: auto 0;
+    font-family: inter;
+    font-weight: bold;
+    font-size: 36px;
+}
+a{
+    display: flex;
+    justify-content: center;
+    margin: 100px auto;
+    width: fit-content;
+    text-decoration: none;
+}
+input{
+    font-family: inter;
+    font-size: 28px;
+}
+.boutons{
+    margin: 200px auto;
+    width: fit-content;
+}
+ul{
+    display: flex;
+    justify-content: flex-end;
+    font-family: inter;
+    font-size: 22px;
+    margin: 50px auto;
+    padding-bottom: 20px;
+    justify-content: space-evenly;
+}
+li:hover{
+    opacity: 0.6;
+}

@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="../css/resetCss.css">
+    <link rel="stylesheet" href="../css/categorie.css">
 </head>
 <body>
     <h1>Catégorie1</h1>
-    <input type="button" value="Ajouter un sujet" id="tables">
-    <table>
+    <div class="tableau">
+     <table >
         <thead>
             <tr>
                 <th>Sujet</th>
@@ -18,22 +21,19 @@
         </thead>
         <tbody id="table">
             <tr>
-               <td>test</td>  
+              <td> <a href="../html/sujet.html">test</a></td>
                <td>02/12/2050</td>  
                <td>test</td>  
             </tr>
-            <tr>
-                <td>test</td>  
-                <td>02/12/2050</td>  
-                <td>test</td>  
-             </tr>
         </tbody>
-    </table>
-    <div id="newSujet">
-        <div id="form">
+     </table>
+     <input type="button" value="Ajouter un sujet" class="toggle" id="hidden">
+    </div>
+    <div id="newSujet" class="hidden add">
+        <div id="form" >
             <label for="titre">Titre: </label><br>
-            <input type="text" placeholder="Votre titre" id="titre">
-            <input type="button" value="Ajouter" id="test">
+            <input type="text" placeholder="Votre titre" class="input" id="titre">
+            <input type="button" value="Ajouter" class="input" id="test">
             <small></small>
         </div>
     </div>

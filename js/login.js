@@ -42,9 +42,9 @@ let identifiant = localStorage.getItem("identifiant");
             let valid = false;
             const email = emailEl.value.trim();
             if (!isRequired(email)) {
-                showError(emailEl, 'le champ ne peut être vide');
+                showError(emailEl, 'le champ ne peut pas être vide');
             } else if (!isEmailValid(email)) {
-                showError(emailEl, "L'adresse mail ne peut être valide")
+                showError(emailEl, "L'adresse mail n'est pas valide")
             } else if (email != identifiant) {
                 showError(emailEl, 'email non enregistrer veuillez créer un compte')
             } else {
@@ -57,7 +57,7 @@ let identifiant = localStorage.getItem("identifiant");
             let valid = false;
             const password = passwordEl.value.trim();
             if (!isRequired(password)) {
-                showError(passwordEl, 'le mot de passe ne peut être vide');
+                showError(passwordEl, 'le mot de passe ne peut pas être vide');
             } else if (!isPasswordSecure(password)) {
                 showError(passwordEl, 'Le mot de passe doit avoir au moins 8 caractères, il doit comporter une minuscule,une majuscule, un chiffre et un caractère spécial parmi les suivants (#+-^[])');
             } else if (password != mdp) {

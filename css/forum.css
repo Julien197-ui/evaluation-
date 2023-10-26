@@ -1,0 +1,40 @@
+h1{
+    text-align: center;
+    margin: auto;
+    font-family: inter;
+    font-weight: bold;
+    font-size: 36px;
+}
+.bienvenue{
+    text-align: center;
+    margin: 50px auto;
+    font-family: inter;
+    font-size: 20px;
+}
+.categories{
+    display: flex;
+    justify-content: center;
+    margin: 100px auto;
+    width: fit-content;
+    font-family: inter;
+}
+.categorie{
+    width: 200px;
+    margin: auto 50px;
+    padding: 15px;
+    border: solid;
+}
+a{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto auto auto;
+    width: fit-content;
+    text-decoration: none;
+}
+input{
+    font-family: inter;
+    font-size: 20px;
+}
+.mt20{
+    margin-top: 20px;
+}
