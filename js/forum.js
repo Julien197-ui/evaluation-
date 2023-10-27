@@ -19,3 +19,19 @@ identifiant.appendChild(document.createTextNode(username));
 var dayDate = new Date()
 date.appendChild(document.createTextNode(dayDate.toLocaleDateString()));
 heure.appendChild(document.createTextNode(dayDate.toLocaleTimeString()));
+
+let cat1 = document.getElementById("Cat1").innerHTML;
+let cat1c = document.getElementById("Cat1c");
+let cat2 = document.getElementById("Cat2").innerHTML;
+let cat2c = document.getElementById("Cat2c");
+let cat3 = document.getElementById("Cat3").innerHTML;
+let cat3c = document.getElementById("Cat3c");
+cat1c.addEventListener("click", function () {
+    localStorage.setItem("cat", cat1);
+});
+cat2c.addEventListener("click", function () {
+    localStorage.setItem("cat", cat2);
+});
+cat3c.addEventListener("click", function () {
+    localStorage.setItem("cat", cat3);
+});

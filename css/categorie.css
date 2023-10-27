@@ -12,21 +12,27 @@ h1{
     font-size: 36px;
 }
 table,
-td{
+td{ 
     border-width:1px ;
-    border-style: solid;
+    border-left-style: solid;
+    border-right-style: solid ;
+    border-bottom-style: solid ;
+    border-top-style: solid ;
     border-color: black;
     text-align: center;
     padding: 20px;
     margin: 100px  auto auto auto;
     width: auto;
 }
-.tr p{
-    max-width: 100px;
-    max-height: 100px
+.leftBord{
+    padding: 5px;
+    word-break: normal;
+    border-width: 1px;
+    border-left-style: solid;
 }
 thead{
     font-weight: bold;
+
 }
 .toggle{
     display: flex;
@@ -110,6 +116,7 @@ a{
     margin: auto ;
 }
 .comment{
+    width: 35vw;
     text-align: start;
     font-family: inter;
     font-size: 20px;
@@ -142,4 +149,8 @@ a{
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+}
+.decoration{
+    text-decoration: underline;
+    
 }

@@ -8,11 +8,13 @@ window.addEventListener("load", function() {
     });
     let deconnexion = document.getElementById("deconnexion")
     deconnexion.addEventListener("click", function () {
-        localStorage.removeItem("connexion")
-        window.location = "../html/login.html"
+        localStorage.removeItem("connexion");
+        window.location = "../html/login.html";
     })
 
-
+var comment = localStorage.getItem("comment");
+var texte = document.getElementById("texte");
+texte.appendChild(document.createTextNode(comment));
 var title = localStorage.getItem("title");
 var titre = document.getElementById("titre");
 titre.appendChild(document.createTextNode(title));

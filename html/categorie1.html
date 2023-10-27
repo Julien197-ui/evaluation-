@@ -3,29 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Catégories</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
     <link rel="stylesheet" href="../css/resetCss.css">
     <link rel="stylesheet" href="../css/categorie.css">
 </head>
 <body>
     <input type="button" value="Deconnexion" id="deconnexion" class="inputs end">
-       <h1 class="title">Catégorie1</h1>
+       <h1 class="title" id="title"></h1>
        <div class="tableau">
        <table >
         <thead>
             <tr>
-                <th>Sujet</th>
-                <th>Date du dernier commentaire</th>
-                <th>Auteur</th>
+                <th class="leftBord">Sujet</th>
+                <th class="leftBord">Date du dernier commentaire</th>
+                <th class="leftBord">Auteur</th>
             </tr>
         </thead>
         <tbody id="table">
-            <tr>
-              <td> <a href="../html/sujet.html">test</a></td>
-               <td>02/12/2050</td>  
-               <td>test</td>  
-            </tr>
         </tbody>
      </table>
      <input type="button" value="Ajouter un sujet" class="toggle inputs" id="hidden">
@@ -34,7 +29,7 @@
         <div id="form" class="form">
             <label for="titre" >Titre: </label><br>
             <input type="text" placeholder="Votre titre" class="input mb10" id="titre">
-            <textarea  id="commentaire" placeholder="Votre premier commentaire" cols="30" rows="10" class="textBox mb10"></textarea>
+            <textarea  id="commentaire" placeholder="Votre premier message" cols="30" rows="10" class="textBox mb10"></textarea>
             <input type="button" value="Ajouter" class="input inputs mb10" id="test">
             <small></small>
         </div>

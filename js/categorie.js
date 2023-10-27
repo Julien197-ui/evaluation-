@@ -13,6 +13,11 @@ window.addEventListener("load", function() {
     })
 
 
+
+var catTitle = document.getElementById("title");
+var cat = localStorage.getItem("cat");
+catTitle.appendChild(document.createTextNode(cat));
+
 var titreEl = document.getElementById("titre");
 var commentaireEl = document.getElementById("commentaire")
 let form = document.getElementById("form");
@@ -82,14 +87,14 @@ test.addEventListener('click',function(e){
         var identifiant = localStorage.getItem("username");
         var prenom = localStorage.getItem("prénom");
         var table = document.getElementById("table");
-        var link = document.createElement("button");
+        var link = document.createElement("p");
         var lien = document.createElement("input");
         var span = document.createElement("span");
     let row = table.insertRow();
     let cell1 = row.insertCell();
     cell1.appendChild(link);
-    //link.setAttribute("href", "../html/sujet.html");
     link.appendChild(document.createTextNode(titreEl.value));
+    link.classList.add("decoration")
     let cell2 = row.insertCell();
     cell2.appendChild(document.createTextNode(new Date().toLocaleDateString()));
     let cell3 = row.insertCell();
@@ -102,15 +107,17 @@ test.addEventListener('click',function(e){
     cell4.classList.add("hidden");
     cell4.classList.add("comment");
     cell4.appendChild(span);
-    span.appendChild(lien);
-    lien.setAttribute("type", "button");
-    lien.setAttribute("value", "voir le sujet");
-    lien.classList.add("inputs2");
     var sujet =  document.createElement("a");
     sujet.setAttribute("href", "../html/sujet.html");
+    span.appendChild(sujet);
+    lien.setAttribute("type", "button");
+    lien.setAttribute("value", "voir la discussion");
+    lien.classList.add("inputs2");
     sujet.appendChild(lien);
     link.addEventListener("click", function () {
         cell4.classList.toggle("hidden");
     })
+    titreEl.value = "";
+    commentaireEl.value = "";
 }
     });
