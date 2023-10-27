@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="../css/categorie.css">
 </head>
 <body>
-    <h1>Catégorie1</h1>
-    <div class="tableau">
-     <table >
+    <input type="button" value="Deconnexion" id="deconnexion" class="inputs end">
+       <h1 class="title">Catégorie1</h1>
+       <div class="tableau">
+       <table >
         <thead>
             <tr>
                 <th>Sujet</th>
@@ -27,13 +28,14 @@
             </tr>
         </tbody>
      </table>
-     <input type="button" value="Ajouter un sujet" class="toggle" id="hidden">
+     <input type="button" value="Ajouter un sujet" class="toggle inputs" id="hidden">
     </div>
     <div id="newSujet" class="hidden add">
-        <div id="form" >
-            <label for="titre">Titre: </label><br>
-            <input type="text" placeholder="Votre titre" class="input" id="titre">
-            <input type="button" value="Ajouter" class="input" id="test">
+        <div id="form" class="form">
+            <label for="titre" >Titre: </label><br>
+            <input type="text" placeholder="Votre titre" class="input mb10" id="titre">
+            <textarea  id="commentaire" placeholder="Votre premier commentaire" cols="30" rows="10" class="textBox mb10"></textarea>
+            <input type="button" value="Ajouter" class="input inputs mb10" id="test">
             <small></small>
         </div>
     </div>

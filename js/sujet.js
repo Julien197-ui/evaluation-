@@ -1,3 +1,17 @@
+window.addEventListener("load", function() {
+    let id = localStorage.getItem("connexion")
+    console.log(id);
+    if (id === null) {
+        window.location = "../html/login.html"
+        alert("veuillez vous connectez avant d'acceder au forum")
+    };
+    });
+    let deconnexion = document.getElementById("deconnexion")
+    deconnexion.addEventListener("click", function () {
+        localStorage.removeItem("connexion")
+        window.location = "../html/login.html"
+    })
+
 
 var title = localStorage.getItem("title");
 var titre = document.getElementById("titre");
@@ -57,34 +71,29 @@ envoyer.addEventListener('click',function(e){
         alert("La création du nouveau sujet a echoué")
     } else {
         //alert("Le sujet a été créé");
-        let table = document.getElementById("table")
-        let text1 = document.createElement("p");
-        let text2 = document.createElement("p");
-        let text3 = document.createElement("p");
+        let br = document.createElement("br");
         let span1 = document.createElement("span");
         let span2 = document.createElement("span");
         let span3 = document.createElement("span");
         let span4 = document.createElement("span");
         let row = commentaires.insertRow();
         let cell1 = row.insertCell();
-        cell1.appendChild(text1);
-        text1.setAttribute("id", "texte")
-        text1.appendChild(document.createTextNode(commentEl.value))
+        cell1.setAttribute("id", "texte")
+        cell1.appendChild(document.createTextNode(commentEl.value))
         let cell2 = row.insertCell();
-        cell2.appendChild(text2);
-        text2.appendChild(span1);
+        cell2.classList.add("right");
+        cell2.appendChild(span1);
         span1.setAttribute("id", "prenom");
-        text2.classList.add("right");
-        text2.appendChild(span2);
+        cell2.appendChild(span2);
         span2.setAttribute("id", "nom");
-        text3.classList.add("right");
-        cell2.appendChild(text3);
-        text3.appendChild(document.createTextNode("envoyer le :"));
-        text3.appendChild(span3);
-        text3.classList.add("right");
+        cell2.classList.add("right");
+        cell2.appendChild(br)
+        cell2.appendChild(document.createTextNode("envoyer le :"));
+        cell2.appendChild(span3);
+        cell2.classList.add("right");
         span3.setAttribute("id", "date");
-        text3.appendChild(document.createTextNode(" à "));
-        text3.appendChild(span4);
+        cell2.appendChild(document.createTextNode(" à "));
+        cell2.appendChild(span4);
         span4.setAttribute("id", "heure");
         var dayDate = new Date();
         span3.appendChild(document.createTextNode(dayDate.toLocaleDateString()));

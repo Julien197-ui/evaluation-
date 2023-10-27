@@ -1,3 +1,16 @@
+window.addEventListener("load", function() {
+let id = localStorage.getItem("connexion")
+console.log(id);
+if (id === null) {
+    window.location = "../html/login.html"
+    alert("veuillez vous connectez avant d'acceder au forum")
+};
+});
+let deconnexion = document.getElementById("deconnexion")
+deconnexion.addEventListener("click", function () {
+    localStorage.removeItem("connexion")
+    window.location = "../html/login.html"
+})
 let username = localStorage.getItem("username");
 var identifiant = document.getElementById("identifiant");
 var date = document.getElementById("date");

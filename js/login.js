@@ -80,6 +80,7 @@ let identifiant = localStorage.getItem("identifiant");
             e.preventDefault();
             alert("L'envoie a échoué")
         } else {
+            localStorage.setItem("connexion",identifiant);
             window.open("forum.html")
         }
             });
