@@ -1,9 +1,28 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+}
 header{
+    background-color: rgb(15, 15, 15);
+    opacity: 0.8;
+    width: 100vw;
+    height: 10vh;
+    margin:  auto;
+    color: white;
+    z-index: 1;
+    padding-bottom: 2vh;
+}
+footer{
+    width: 100vw;
+    height: 10vh;
     background-color: rgb(15, 15, 15);
     opacity: 0.8;
     margin:  auto;
     color: white;
     z-index: 1;
+    padding-top: 2vh;
 }
 h1{
     text-align: center;
@@ -11,11 +30,20 @@ h1{
     font-family: inter;
     font-weight: bold;
     font-size: 36px;
+    margin-top: 5vh;
+}
+.footerText{
+    text-align: center;
+    margin: auto 0;
+    font-family: inter;
+    font-size: 22px;
+    margin-top: 5vh;
 }
 a{
     display: flex;
     justify-content: center;
-    margin: 100px auto;
+    margin: auto;
+    margin-top: 2vh;
     width: fit-content;
     text-decoration: none;
 }
@@ -24,8 +52,12 @@ input{
     font-size: 28px;
 }
 .boutons{
-    margin: 200px auto;
+    height: 80vh;
+    margin:  auto;
     width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 ul{
     display: flex;
@@ -54,7 +86,8 @@ input{
   cursor: pointer;
   font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
   font-size: 100%;
-  height: 44px;
+  height: 5vh;
+  width: 10vw;
   line-height: 1.15;
   margin: 0 auto;
   outline: none;
@@ -68,6 +101,18 @@ input{
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+}
+.login{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    margin-bottom: 2vh;
+    height: 10vh;
+    padding-right: 3vw;
+    padding-left: 3vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
 }
 input:disabled {
     cursor: default;

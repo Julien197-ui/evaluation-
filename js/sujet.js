@@ -104,37 +104,5 @@ envoyer.addEventListener('click',function(e){
         var surName = localStorage.getItem("prénom");
         span2.appendChild(document.createTextNode(names));
         span1.appendChild(document.createTextNode(surName));
-        /*
-        commentaires.appendChild(divC);
-        divC.classList.add("newComment");
-        divC.appendChild(text1);
-        text1.setAttribute("id", "texte");
-        text1.appendChild(document.createTextNode(commentEl.value))
-        divC.appendChild(ulC);
-        //noms
-        ulC.appendChild(text2);
-        
-        text2.appendChild(span1);
-        span1.setAttribute("id", "prenom");
-        text2.classList.add("right");
-        text2.appendChild(span2);
-        span2.setAttribute("id", "nom");
-        text3.classList.add("right");
-        //date
-        ulC.appendChild(text3);
-        text3.appendChild(document.createTextNode("envoyer le :"));
-        text3.appendChild(span3);
-        text3.classList.add("right");
-        span3.setAttribute("id", "date");
-        text3.appendChild(document.createTextNode(" à "));
-        text3.appendChild(span4);
-        span4.setAttribute("id", "heure");
-        var dayDate = new Date();
-        span3.appendChild(document.createTextNode(dayDate.toLocaleDateString()));
-        span4.appendChild(document.createTextNode(dayDate.toLocaleTimeString()));
-        var names = localStorage.getItem("username");
-        var surName = localStorage.getItem("prénom");
-        span2.appendChild(document.createTextNode(names));
-        span1.appendChild(document.createTextNode(surName)); */
 }
     });

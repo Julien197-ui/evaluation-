@@ -2,30 +2,95 @@
     display: none;
 }
 body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
     font-family: inter;
+}
+header{
+    background-color: rgb(15, 15, 15);
+    opacity: 0.8;
+    width: 100vw;
+    height: 10vh;
+    color: white;
+    z-index: 1;
+    padding-bottom: 2vh;
+}
+footer{
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(15, 15, 15);
+    opacity: 0.8;
+    color: white;
+    z-index: 1;
+    padding-top: 2vh;
+    margin-top: 10vh;
 }
 h1{
     text-align: center;
-    margin: auto;
+    margin: auto 0;
     font-family: inter;
     font-weight: bold;
     font-size: 36px;
+    
+}
+.footerText{
+    text-align: center;
+    margin: auto 0;
+    font-family: inter;
+    font-size: 22px;
+    margin-top: 5vh;
+}
+.vhBody{
+    height: 90vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.vh10{
+    height: 10vh;
+}
+.deco{
+    height: 5vh;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.tableau{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.sizes{
+    height: 70vh;
+}
+.mobile{
+    width: 30vw;
 }
 table,
 td{ 
+    margin-top: 5vh;
+    height: 5vh;
+    width: 2vw;
     border-width:1px ;
-    border-left-style: solid;
-    border-right-style: solid ;
-    border-bottom-style: solid ;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: none ;
     border-top-style: solid ;
     border-color: black;
     text-align: center;
-    padding: 20px;
-    margin: 100px  auto auto auto;
-    width: auto;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .leftBord{
-    padding: 5px;
+    width: 3vw;
+    height: 2vh;
+    padding: 10px;
     word-break: normal;
     border-width: 1px;
     border-left-style: solid;
@@ -34,20 +99,33 @@ thead{
     font-weight: bold;
 
 }
+.displayBorder{
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+}
+.hiddenBorder{
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom-style: none;
+    border-top-style: none;
+}
 .toggle{
     display: flex;
     justify-content: center;
-    margin: 10px auto auto auto;
+    margin: 1w auto auto auto;
     font-size: 20px;
     font-family: inter;
 }
 .add{
     display: flex;
     justify-content: center;
-    margin: 50px auto; 
+    margin: 5vw auto; 
     font-size: 20px;
 }
 a{
+    width: 2vw;
+    height: 2vh;
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -55,11 +133,6 @@ a{
 .input{
     font-size: 20px;
     
-}
-.tableau{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
 }
 .inputs{
     appearance: button;
@@ -73,12 +146,12 @@ a{
   cursor: pointer;
   font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
   font-size: 100%;
-  height: 44px;
+  height: 5vh;
   line-height: 1.15;
   margin: 0 auto;
   outline: none;
   overflow: hidden;
-  padding: 0 20px;
+  padding: 0 2vh;
   position: relative;
   text-align: center;
   text-transform: none;
@@ -104,16 +177,40 @@ a{
     flex-direction: column;
 }
 .mb10{
-    margin-bottom: 10px;
+    margin-bottom: 1vh;
 }
 .textBox{
     font-family: inter;
     font-size: 16px;
 }
 #deconnexion{
-    display: block;
-    justify-content: right;
-    margin: auto ;
+    display: flex;
+    justify-content: flex-end;
+    width: fit-content;
+    appearance: button;
+  backface-visibility: hidden;
+  background-color: #405cf5;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  outline: none;
+  overflow: hidden;
+  padding: 0 20px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 .comment{
     width: 35vw;
@@ -134,12 +231,12 @@ a{
   cursor: pointer;
   font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
   font-size: 100%;
-  height: 30px;
+  height: 3vh;
   line-height: 1.15;
   margin: 0 auto;
   outline: none;
   overflow: hidden;
-  padding: 0 20px;
+  padding: 0 1vw;
   margin: 10px;
   position: relative;
   text-align: center;
@@ -153,4 +250,23 @@ a{
 .decoration{
     text-decoration: underline;
     
+}
+#deconnexion{
+    display: flex;
+    justify-content: flex-end;
+    width: fit-content;
+}
+.retricitus{
+    font-size: 16px;
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    table{
+        font-size: 10px;
+        padding: auto;
+    }
+    .retricitus{
+        font-size: 10px;
+        text-align: center;
+    }
 }

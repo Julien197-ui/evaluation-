@@ -1,15 +1,59 @@
 body{
-    font-family: inter;
-    color: black;
-    border-color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+header{
+    background-color: rgb(15, 15, 15);
+    opacity: 0.8;
+    width: 100vw;
+    height: 10vh;
+    color: white;
+    z-index: 1;
+    padding-bottom: 2vh;
+}
+footer{
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(15, 15, 15);
+    opacity: 0.8;
+    color: white;
+    z-index: 1;
+    padding-top: 2vh;
 }
 h1{
     text-align: center;
-    margin: auto;
+    margin: auto 0;
+    font-family: inter;
     font-weight: bold;
     font-size: 36px;
+    
+}
+.footerText{
+    text-align: center;
+    margin: auto 0;
+    font-family: inter;
+    font-size: 22px;
+    margin-top: 5vh;
+}
+.vhBody{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    margin: 20vh auto;
+}
+.vh10{
+    height: 10vh;
+}
+.deco{
+    display: flex;
+    justify-content: flex-end;
+    height:  50px;
+    
 }
 #commentaires{
+    font-family: inter;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -22,9 +66,14 @@ h1{
     
 }
 .message{
+    font-weight: bold;
+    font-family: inter;
+    height: 50vh;
+    width: 20vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: 0 auto;
+    margin: 5vh auto;
 }
 .newComment{
     display: flex;
@@ -56,4 +105,63 @@ ul{
 #texte{
     width: 30vw;
     word-break: break-all;
+}
+#deconnexion{
+    display: flex;
+    justify-content: flex-end;
+    width: fit-content;
+    appearance: button;
+  backface-visibility: hidden;
+  background-color: #405cf5;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  outline: none;
+  overflow: hidden;
+  padding: 0 20px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.table{
+    height: 50vh;
+}
+.inputs{
+    appearance: button;
+  backface-visibility: hidden;
+  background-color: #405cf5;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 0 auto;
+  outline: none;
+  overflow: hidden;
+  padding: 0 20px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }

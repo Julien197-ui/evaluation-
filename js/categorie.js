@@ -95,18 +95,29 @@ test.addEventListener('click',function(e){
     cell1.appendChild(link);
     link.appendChild(document.createTextNode(titreEl.value));
     link.classList.add("decoration")
+    cell1.classList.add("displayBorder");
     let cell2 = row.insertCell();
     cell2.appendChild(document.createTextNode(new Date().toLocaleDateString()));
+    cell2.classList.add("displayBorder");
     let cell3 = row.insertCell();
     cell3.appendChild(document.createTextNode(prenom+ " "+identifiant));
+    cell3.classList.add("displayBorder");
     let row2 = table.insertRow();
+    
     row.classList.add("size");
-    let cell4 = document.createElement("p");
-    row2.appendChild(cell4);
+    let cell4 = row2.insertCell();
+    let cell6 = row2.insertCell();
+    //let cell4 = document.createElement("p");
+    //row2.appendChild(cell4);
     cell4.appendChild(document.createTextNode(commentaireEl.value))
-    cell4.classList.add("hidden");
+    row2.classList.add("hidden");
+    row2.classList.add("hiddenBorder");
+    cell4.classList.add("retricitus")
+    cell4.classList.add("displayBorder");
+    cell4.classList.add("displayBorder");
     cell4.classList.add("comment");
-    cell4.appendChild(span);
+    cell6.classList.add("displayBorder");
+    cell6.appendChild(span);
     var sujet =  document.createElement("a");
     sujet.setAttribute("href", "../html/sujet.html");
     span.appendChild(sujet);
@@ -115,7 +126,7 @@ test.addEventListener('click',function(e){
     lien.classList.add("inputs2");
     sujet.appendChild(lien);
     link.addEventListener("click", function () {
-        cell4.classList.toggle("hidden");
+        row2.classList.toggle("hidden");
     })
     titreEl.value = "";
     commentaireEl.value = "";

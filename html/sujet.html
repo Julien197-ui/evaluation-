@@ -9,8 +9,12 @@
     <link rel="stylesheet" href="../css/sujet.css">
 </head>
 <body>
+    <header>
+        <div class="deco">
+        <input type="button" value="Deconnexion" id="deconnexion">
+    </div>
     <h1 id="titre"></h1>
-    <input type="button" value="Deconnexion" id="deconnexion">
+    </header>
     <table id="commentaires">
         <tbody id="table">
             <tr>
@@ -20,11 +24,16 @@
         </tbody>
     </table>
     <div class="message">
-        <p>Message à envoyer</p>
+        <p>Message à envoyer :</p>
         <input type="text" id="commentaire">
-        <input type="button" id="envoyer" value="envoyer">
+        <input type="button" id="envoyer" value="envoyer" class="inputs">
         <small></small>
     </div>
+    <footer>
+        <div>
+            <p class="footerText">© Copyright 2023</p>
+        </div>
+    </footer>
     <script src="../js/sujet.js"></script>
 </body>
 </html>

@@ -1,9 +1,50 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+header{
+    background-color: rgb(15, 15, 15);
+    opacity: 0.8;
+    width: 100vw;
+    height: 10vh;
+    color: white;
+    z-index: 1;
+    padding-bottom: 2vh;
+}
+footer{
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(15, 15, 15);
+    opacity: 0.8;
+    color: white;
+    z-index: 1;
+    padding-top: 2vh;
+}
 h1{
     text-align: center;
-    margin: auto;
+    margin: auto 0;
     font-family: inter;
     font-weight: bold;
     font-size: 36px;
+    
+}
+.footerText{
+    text-align: center;
+    margin: auto 0;
+    font-family: inter;
+    font-size: 22px;
+    margin-top: 5vh;
+}
+.vhBody{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    margin: 20vh auto;
+}
+.vh10{
+    height: 10vh;
 }
 .bienvenue{
     text-align: center;
@@ -14,12 +55,12 @@ h1{
 .categories{
     display: flex;
     justify-content: center;
-    margin: 100px auto;
+    margin:  auto;
     width: fit-content;
     font-family: inter;
 }
 .categorie{
-    width: 200px;
+    width: 20vw;
     margin: auto 50px;
     padding: 15px;
     border: solid;
@@ -76,7 +117,38 @@ input:hover{
 }
 #deconnexion{
     display: flex;
-    justify-content: center;
-    margin: 0 auto;
+    justify-content: flex-end;
+    width: fit-content;
+}
+.deco{
+    height: 5vh;
     width: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+@media only screen and (max-width: 1000px) {
+    .categories{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin:  auto;
+        width: fit-content;
+        font-family: inter;
+    }
+    .categorie{
+        width: 30vw;
+        text-overflow: ellipsis;
+        word-break: break-all;
+        height: 10vh;
+        margin: auto 50px;
+        padding: 15px;
+        border: solid;
+    }
+    .mt20{
+        display: none;
+    }
+    .mobile{
+        display: flex;
+        justify-content: center;
+    }
 }
