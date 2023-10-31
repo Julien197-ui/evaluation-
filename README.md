@@ -19,7 +19,9 @@ https://www.figma.com/file/SDoZ4CC0tyQPNBlBKIhqLp/Evaluation-24%2F10?type=design
 ## languages utilisés :
 
 -HTML
+
 -CSS
+
 -JavaScript
 
 ## Fonctionnalités :
