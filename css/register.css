@@ -4,6 +4,10 @@
     --warning-color: #ffc107;
 }
 body{
+    background: url(../images/login-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -11,7 +15,6 @@ body{
 }
 header{
     background-color: rgb(15, 15, 15);
-    opacity: 0.8;
     width: 100vw;
     height: 10vh;
     color: white;
@@ -43,6 +46,9 @@ h1{
     margin-top: 5vh;
 }
 .cont{
+    background-color: rgb(15,15,15);
+    color: white;
+    opacity: 0.8;
     height: 70vh;
     display: flex;
     justify-content: center;

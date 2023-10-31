@@ -2,6 +2,10 @@
     display: none;
 }
 body{
+    background: url(../images/categorie-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -67,16 +71,22 @@ h1{
 }
 .sizes{
     height: 70vh;
+   
+}
+.backgroundCol{
+    margin-left: auto;
+    margin-right: auto;
 }
 .mobile{
     width: 30vw;
 }
 table,
 td{ 
+    color: white;
     margin-top: 5vh;
     height: 5vh;
     width: 2vw;
-    border-width:1px ;
+    border-width:2px ;
     border-left-style: none;
     border-right-style: none;
     border-bottom-style: none ;
@@ -100,11 +110,13 @@ thead{
 
 }
 .displayBorder{
+   
     border-right-style: solid;
     border-bottom-style: solid;
     border-left-style: solid;
 }
 .hiddenBorder{
+
     border-right-style: none;
     border-left-style: none;
     border-bottom-style: none;
@@ -118,6 +130,7 @@ thead{
     font-family: inter;
 }
 .add{
+    color: white;
     display: flex;
     justify-content: center;
     margin: 5vw auto; 

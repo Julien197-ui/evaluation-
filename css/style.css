@@ -1,11 +1,14 @@
 body{
-    display: flex;
+    background: url(../images/background-illuminati.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     flex-direction: column;
     min-height: 100vh;
     min-width: 100vw;
 }
 header{
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(75, 71, 71);
     opacity: 0.8;
     width: 100vw;
     height: 10vh;
@@ -17,7 +20,7 @@ header{
 footer{
     width: 100vw;
     height: 10vh;
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(75, 71, 71);
     opacity: 0.8;
     margin:  auto;
     color: white;
@@ -29,8 +32,8 @@ h1{
     margin: auto 0;
     font-family: inter;
     font-weight: bold;
-    font-size: 36px;
-    margin-top: 5vh;
+    font-size: 48px;
+    padding-top: 5vh;
 }
 .footerText{
     text-align: center;
@@ -85,7 +88,7 @@ input{
   color: #fff;
   cursor: pointer;
   font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
-  font-size: 100%;
+  font-size: 1vw;
   height: 5vh;
   width: 10vw;
   line-height: 1.15;
@@ -102,17 +105,26 @@ input{
   -webkit-user-select: none;
   touch-action: manipulation;
 }
+label{
+    color: white;
+    font-family: inter;
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+}
 .login{
+    background-color: rgb(75, 71, 71);
+    opacity: 1.5;
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
     margin-bottom: 2vh;
     height: 10vh;
-    padding-right: 3vw;
-    padding-left: 3vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
     margin-left: auto;
     margin-right: auto;
-    width: 40vw;
+    width: 15vw;
 }
 input:disabled {
     cursor: default;
